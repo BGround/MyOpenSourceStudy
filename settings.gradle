@@ -1,1 +1,1 @@
-include ':app', ':recyclerviewcomponents', ':databindingdemo'
+include ':app', ':recyclerviewcomponents', ':databindingdemo', ':rxjavademo'
