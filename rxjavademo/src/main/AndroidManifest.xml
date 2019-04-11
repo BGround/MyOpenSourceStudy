@@ -13,8 +13,9 @@
         tools:ignore="GoogleAppIndexingWarning">
         <!--RxJava介绍主要MainActivity
         <activity android:name=".MainActivity"> -->
-        <!--CreateOperator操作符主要使用这个activity' -->
-        <activity android:name=".operator.CreateOperator">
+        <!--CreateOperator操作符主要使用的activity'
+        <activity android:name=".operator.CreateOperator">-->
+        <activity android:name=".operator.SwitchOperator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
