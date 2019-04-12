@@ -11,11 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <!--RxJava介绍主要MainActivity
+        <!--RxJava 介绍主要MainActivity
         <activity android:name=".MainActivity"> -->
-        <!--CreateOperator操作符主要使用的activity'
+        <!--CreateOperator 操作符主要使用的activity'
         <activity android:name=".operator.CreateOperator">-->
-        <activity android:name=".operator.SwitchOperator">
+        <!--SwitchOperator 操作符主要使用的activity'
+        <activity android:name=".operator.SwitchOperator"> -->
+        <activity android:name=".operator.CombineOperator">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
