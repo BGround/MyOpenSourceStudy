@@ -11,19 +11,33 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <!--RxJava 介绍主要MainActivity
+
+        <!-- RxJava 介绍主要MainActivity
         <activity android:name=".MainActivity"> -->
-        <!--CreateOperator 操作符主要使用的activity'
+
+        <!--  创建操作符主要使用的activity
         <activity android:name=".operator.CreateOperator">-->
-        <!--SwitchOperator 操作符主要使用的activity'
+
+        <!--  转换操作符主要使用的activity
         <activity android:name=".operator.SwitchOperator"> -->
-        <activity android:name=".operator.CombineOperator">
+
+        <!--  组合操作符主要使用的activity
+        <activity android:name=".operator.CombineOperator"> -->
+
+        <!--  组合操作符demo
+         1、CombineOperatorDemo1 ：从磁盘 / 内存缓存中 获取缓存数据
+         2、
+         3、-->
+        <activity android:name=".demo.CombineOperatorDemo1">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
