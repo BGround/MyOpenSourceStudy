@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="14dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toTopOf="@+id/bt_subscription"
+        app:layout_constraintStart_toStartOf="@+id/bt_subscription" />
+
+    <Button
+        android:id="@+id/bt_subscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="294dp"
+        android:text="注册事件"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="跳转"
+        app:layout_constraintStart_toStartOf="@+id/bt_subscription"
+        app:layout_constraintTop_toBottomOf="@+id/bt_subscription" />
+
+</android.support.constraint.ConstraintLayout>
