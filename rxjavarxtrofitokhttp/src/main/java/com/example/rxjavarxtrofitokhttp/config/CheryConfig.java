@@ -1,10 +1,6 @@
-package com.mychery.appcloud.config;
+package com.example.rxjavarxtrofitokhttp.config;
 
 import android.content.Context;
-
-import com.mychery.android.lib.config.AppConfig;
-import com.mychery.android.lib.http.RetrofitClient;
-import com.mychery.android.lib.storage.StorageUtil;
 
 /**
  * @author:: wangjianchi
@@ -13,18 +9,16 @@ import com.mychery.android.lib.storage.StorageUtil;
  */
 
 public class CheryConfig {
+
     public static void init(Context context) {
+//        RetrofitClient.init();
         AppConfig.init(context);
-        RetrofitClient.init();
-        StorageUtil.init(context);
-    }
-
-
-    public interface OnHttpLoadListener {
-        void loadSuccess();
 
     }
 
+    public static Context getContext() {
+        return AppConfig.getContext();
+    }
 
 
 }

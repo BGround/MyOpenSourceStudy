@@ -1,4 +1,4 @@
-package com.mychery.android.lib.http;
+package com.example.rxjavarxtrofitokhttp.http;
 
 
 import com.alibaba.fastjson.JSONObject;
@@ -37,7 +37,7 @@ public interface ApiStores {
                                       @Field("token") String lky_token);
 
     @POST("{url}")
-    Observable<retrofit2.Response<AppResultData>> getData(@Path(value = "url", encoded = true)  String url,
+    Observable<retrofit2.Response<AppResultData>> getData(@Path(value = "url", encoded = true) String url,
                                                           @Header("data") String data,
                                                           @Body JSONObject jsonObject);
 

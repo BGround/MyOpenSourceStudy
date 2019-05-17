@@ -1,1 +1,1 @@
-include ':app', ':recyclerviewcomponents', ':databindingdemo', ':rxjavademo'
+include ':app', ':recyclerviewcomponents', ':databindingdemo', ':rxjavademo', ':retrofit2', ':JavaTest', ':rxjavarxtrofitokhttp', ':eventbusdemo'

@@ -1,4 +1,4 @@
-package com.mychery.android.lib.http;
+package com.example.rxjavarxtrofitokhttp.http;
 
 import java.io.Serializable;
 
@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @description:
  */
 
-public class AppResultData<T> implements Serializable{
+public class AppResultData<T> implements Serializable {
 
 
     /**

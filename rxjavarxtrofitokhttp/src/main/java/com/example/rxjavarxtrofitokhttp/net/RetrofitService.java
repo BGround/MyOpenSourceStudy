@@ -1,8 +1,8 @@
-package com.mychery.android.lib.net;
+package com.example.rxjavarxtrofitokhttp.net;
 
 import android.util.SparseArray;
 
-import com.mychery.android.lib.BuildConfig;
+import com.example.rxjavarxtrofitokhttp.base.MyApplication;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Converter;
@@ -11,7 +11,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 public class RetrofitService {
 
-    private static final String API_SERVER = BuildConfig.API_SERVER;
+    private static final String API_SERVER = MyApplication.getInstances().API_SERVER;
 
     private static Converter.Factory converterFactory;
     private static final SparseArray<Object> interfaces = new SparseArray<>();

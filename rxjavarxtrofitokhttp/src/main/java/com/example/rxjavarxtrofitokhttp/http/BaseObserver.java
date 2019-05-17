@@ -1,14 +1,11 @@
-package com.mychery.android.lib.http;
+package com.example.rxjavarxtrofitokhttp.http;
 
 
 import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSON;
-import com.mychery.android.lib.R;
-import com.mychery.android.lib.config.preferences.UserPreferences;
-import com.mychery.android.lib.utils.InputUtils;
-import com.mychery.android.lib.utils.UIUtils;
-import com.mychery.android.lib.view.widget.CustomToast;
+import com.example.rxjavarxtrofitokhttp.R;
+import com.example.rxjavarxtrofitokhttp.widgets.CustomToast;
 
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
@@ -32,9 +29,9 @@ public abstract class BaseObserver implements Observer<Response<AppResultData>> 
         //Log.i("RetrofitClient", "onNext: "+JSON.toJSONString(appResultData));
         String token = data.headers().get("Set-Authorization");
         if (!TextUtils.isEmpty(token)){
-            token = InputUtils.getRandomString(7)+token.substring(4);
+//            token = InputUtils.getRandomString(7)+token.substring(4);
             //Log.i("RetrofitClient", "token: "+token);
-            UserPreferences.saveAppToken(token);
+//            UserPreferences.saveAppToken(token);
         }
 
         if (appResultData!=null&&appResultData.getCode() != null){
@@ -52,7 +49,7 @@ public abstract class BaseObserver implements Observer<Response<AppResultData>> 
 
     @Override
     public void onError(Throwable e) {
-        CustomToast.showToast(UIUtils.getString(R.string.network_server_failed));
+        CustomToast.showToast("network error");
         loadSuccess(404,"","");
         //Log.i("Retrofit", "onError: "+e.getMessage());
     }
@@ -62,7 +59,7 @@ public abstract class BaseObserver implements Observer<Response<AppResultData>> 
 
     }
 
-    public abstract void loadSuccess(int code,String msg,String result);
+    public abstract void loadSuccess(int code, String msg, String result);
 
 
 }

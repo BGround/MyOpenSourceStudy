@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:gravity="center_horizontal|bottom"
-        android:textColor="@color/red"
+        android:textColor="@color/colorAccent"
         android:textSize="22dp"
         android:paddingBottom="20dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_slogan_content"
@@ -32,7 +32,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo"
-        tools:text="2019年经营方针" />
+        android:text="2019年经营方针" />
 
 
     <TextView
@@ -41,14 +41,14 @@
         android:layout_height="0dp"
         android:lineSpacingExtra="10dp"
         android:gravity="center_horizontal|top"
-        android:textColor="@color/red"
+        android:textColor="@color/colorAccent"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_slogan"
-        tools:text="客户至上\t\t质量为本\n自主经营\t\t效益优先" />
+        android:text="客户至上\t\t质量为本\n自主经营\t\t效益优先" />
 
     <TextView
         android:id="@+id/imageView2"

@@ -1,4 +1,4 @@
-package com.mychery.android.lib.net;
+package com.example.rxjavarxtrofitokhttp.net;
 
 import com.google.gson.Gson;
 

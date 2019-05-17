@@ -1,4 +1,4 @@
-package com.mychery.appcloud.view.login;
+package com.example.rxjavarxtrofitokhttp.login;
 
 public class UserBean {
 

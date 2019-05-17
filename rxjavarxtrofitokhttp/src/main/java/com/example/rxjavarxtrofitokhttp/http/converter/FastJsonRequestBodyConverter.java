@@ -1,4 +1,4 @@
-package com.mychery.android.lib.http.converter;
+package com.example.rxjavarxtrofitokhttp.http.converter;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializeConfig;
