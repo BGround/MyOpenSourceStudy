@@ -1,2 +1,2 @@
 # MyStudy
-Android知识学习+练习
+Android开源库知识学习+练习
